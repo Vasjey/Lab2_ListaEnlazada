@@ -94,9 +94,8 @@ void* dato=list->current->data;
     if(list->current->prev==NULL){
         Node* izq=list->head;
         Node* der=list->current->next;
-
-        der=NULL;
         izq=der;
+        der=NULL;
         free(list->current);
         return dato;
         }
