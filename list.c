@@ -93,8 +93,8 @@ void* dato=list->current->data;
     
     if(list->current->prev==NULL){
 
-        list->head=list->current->next;
         list->current->next=NULL;
+        list->head=list->current->next;
         free(list->current);
         return dato;
         }
