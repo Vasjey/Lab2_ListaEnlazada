@@ -56,3 +56,8 @@ list.c:95:15: error: ‘der’ undeclared (first use in this function)
    95 |     izq->next=der;
       |               ^~~
 93bf87e
+Thu Mar 26 07:18:34 PM UTC 2026: 
+ list.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  0|0
+9fb536b
