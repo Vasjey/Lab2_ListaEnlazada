@@ -97,7 +97,7 @@ void* dato=list->current->data;
 
         der=NULL;
         izq=der;
-        free(list->current)
+        free(list->current);
         return dato;
         }
     if(list->current->next==NULL){
@@ -105,7 +105,7 @@ void* dato=list->current->data;
         Node* der=list->tail;
         izq->next=NULL;
         der=list->current->prev;
-        free(list->current)
+        free(list->current);
         return dato;
         }
 
