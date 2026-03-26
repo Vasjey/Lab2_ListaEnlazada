@@ -93,13 +93,13 @@ void* dato=list->current->data;
     
     if(list->current->prev==NULL){
 
-        list->current->next=NULL;
+        list->current->next->prev=NULL;
         list->head=list->current->next;
         free(list->current);
         return dato;
         }
     if(list->current->next==NULL){
-        list->current->next->prev=NULL;
+        list->current->prev->next=NULL;
         list->tail=list->current->prev;
         free(list->current);
         return dato;
