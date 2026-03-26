@@ -99,7 +99,7 @@ void* dato=list->current->data;
         return dato;
         }
     if(list->current->next==NULL){
-        list->current->prev->next=NULL;
+        list->current->next->prev=NULL;
         list->tail=list->current->prev;
         free(list->current);
         return dato;
