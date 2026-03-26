@@ -143,3 +143,12 @@ list.c:103:15: error: variable ‘der’ set but not used [-Werror=unused-but-se
       |               ^~~
 cc1: all warnings being treated as errors
 6ffcd9c
+Thu Mar 26 07:52:52 PM UTC 2026: 
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘popCurrent’:
+list.c:103:15: error: variable ‘der’ set but not used [-Werror=unused-but-set-variable]
+  103 |         Node* der=list->tail;
+      |               ^~~
+cc1: all warnings being treated as errors
+50ffbf4
