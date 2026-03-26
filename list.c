@@ -99,10 +99,8 @@ void* dato=list->current->data;
         return dato;
         }
     if(list->current->next==NULL){
-        Node* izq=list->current->prev;
-        Node* der=list->tail;
-        izq->next=NULL;
-        der=list->current->prev;
+        list->current->prev->next=NULL;
+        list->tail=list->current->prev;
         free(list->current);
         return dato;
         }
