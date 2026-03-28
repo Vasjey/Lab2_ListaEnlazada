@@ -92,7 +92,6 @@ void * popCurrent(List * list) {
 void* dato=list->current->data;
     
     if(list->current->prev==NULL){
-
         list->current->next->prev=NULL;
         list->head=list->current->next;
         free(list->current);
@@ -104,16 +103,12 @@ void* dato=list->current->data;
         free(list->current);
         return dato;
         }
-
     Node* izq=list->current->prev;
     Node* der=list->current->next;
-
     izq->next=der;
     der->prev=izq;
-
     free(list->current);
     return dato;
-
 }
 
 void cleanList(List * list) {
