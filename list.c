@@ -80,7 +80,6 @@ void pushFront(List * list, void * data) {
     nuevo->next=list->head;
     list->head->prev=nuevo;
     list->head=nuevo;
-    return list->head->data;
 }
 
 void pushBack(List * list, void * data) {
