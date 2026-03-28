@@ -192,3 +192,14 @@ Sat Mar 28 04:52:51 PM UTC 2026:
  tests:  2|4
 total_score: 20/60
 2175219
+Sat Mar 28 04:53:38 PM UTC 2026: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘firstList’:
+list.c:48:19: error: ‘head’ undeclared (first use in this function)
+   48 |     list->current=head;
+      |                   ^~~~
+list.c:48:19: note: each undeclared identifier is reported only once for each function it appears in
+4ce2093
