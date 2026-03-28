@@ -231,3 +231,14 @@ Sat Mar 28 05:00:49 PM UTC 2026:
  tests:  3|4
 total_score: 25/60
 b3f97c4
+Sat Mar 28 05:04:07 PM UTC 2026: 
+ list.c | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘nextList’:
+list.c:55:32: error: expected ‘;’ before ‘next’
+   55 |     list->current=list->current next;
+      |                                ^~~~~
+      |                                ;
+1c00545
